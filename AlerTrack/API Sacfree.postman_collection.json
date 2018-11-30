@@ -1,0 +1,720 @@
+{
+	"info": {
+		"_postman_id": "3c3c2b88-f8e8-6003-7213-0f21f663f1c6",
+		"name": "API Sacfree",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST /sendDeviceInfo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"type\": \"app\",\n  \"token\": \"9e711e11-361e-52de-bd84-d38d31086167\",\n  \"token_fcm\": \"dA8H0urnuc0:APA91bEaoA0u5TtZgKSMPBfLUNByxxKo93K8gN6lgw-KDH_S57fsmrx9JN6f3yS3QWhh_NM_ABsVGFiwN7Y2abFFxBBoAmlYxd-9tG3CwVkW6ZTWDgSxjF5CihyBnj9YWOZDW07k5rBS\",\n  \"phone\": \"5527998282828\",\n  \"role\": 1,\n  \"cnpj\": \"16.907.400\\/0001-15\",\n  \"carrier\": \"Vivo\",\n  \"android_version\": \"7.0\",\n  \"screen_size\": \"1080X1776\",\n  \"device\": \"Motorola Moto G (4)\",\n  \"version\": 1,\n  \"package\": \"sac.digital.free\",\n  \"ip\": \"10.0.1.12\",\n  \"latitude\": -20.246235,\n  \"longitude\": -40.2646365,\n  \"address\": \"R. Castelo Branco, 32 - N S Fatima, Vitória - ES, 29160-810, Brasil\",\n  \"city\": \"Serra\",\n  \"region\": \"Espírito Santo\",\n  \"country\": \"Brasil\",\n  \"hardware_device\": {\n    \"app_name\": \"SacFree\",\n    \"app_version\": \"1.0.0\",\n    \"app_package\": \"sac.digital.free\",\n    \"device_total_memory\": \"1866.582\",\n    \"device_imei\": \"354119072200090\",\n    \"device_manufacturer\": \"motorola\",\n    \"device_model\": \"Moto_G_(4)\",\n    \"device_os\": \"7.0\",\n    \"device_product\": \"athene_f\",\n    \"device_info\": \"athene_f\",\n    \"device_is_rooted\": \"false\",\n    \"sim_imsi\": \"724112804348289\",\n    \"sim_serial_number\": \"89551093144128768751\",\n    \"sim_country\": \"br\",\n    \"sim_carrier\": \"vivo\"\n  }\n}"
+				},
+				"url": {
+					"raw": "https://lite.sac.digital/api/sendDeviceInfo",
+					"protocol": "https",
+					"host": [
+						"lite",
+						"sac",
+						"digital"
+					],
+					"path": [
+						"api",
+						"sendDeviceInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /sendUserInfo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"token\": \"9e711e11-361e-52de-bd84-d38d31086167\",\n  \"cpf\": \"128.724.187-50\",\n  \"email\": \"rodrigooliveira.tecinfo@gmail.com\",\n  \"password\": \"qwerty\"\n}"
+				},
+				"url": {
+					"raw": "http://192.168.0.68:8000/api/sendUserInfo",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"68"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sendUserInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /getUserInfo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://lite.sac.digital/api/getUserInfo",
+					"protocol": "http",
+					"host": [
+						"lite",
+						"sac",
+						"digital"
+					],
+					"path": [
+						"api",
+						"getUserInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /tokenFCM",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "abd96e4f-5f5e-5baf-ae50-f40f1ec2a08f",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token_fcm",
+							"value": "e495pADAWNc:APA91bFgIVEHZj0RiSMJGTvh1IWL5HG3UgxixKx6Fbp76rWo6BAm6H2HJ9Wfifu8XlQUiT5PP5eMRxXHC7hdcExuVEF3jXxRiyX5kkx3cbnIRcb0MOFN9FbyFsj2uPHt0jGM_3YkPPWL\n",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.0.68:8000/api/tokenFCM",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"68"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tokenFCM"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /updateMessageStatus",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "abd96e4f-5f5e-5baf-ae50-f40f1ec2a08f",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "imei",
+							"value": "354119072200090",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "mensagem_id",
+							"value": "139",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.0.68:8000/api/updateMessageStatus",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"68"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"updateMessageStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /getMessagesAPI/354119072200090",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "abd96e4f-5f5e-5baf-ae50-f40f1ec2a08f",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.0.68:8000/api/getContactsAPI/354119072200090",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"68"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getContactsAPI",
+						"354119072200090"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /listDevices",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "abd96e4f-5f5e-5baf-ae50-f40f1ec2a08f",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.0.68:8000/api/getContactsAPI/354119072200090",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"68"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getContactsAPI",
+						"354119072200090"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET  /listDevices",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "abd96e4f-5f5e-5baf-ae50-f40f1ec2a08f",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.0.68:8000/api/listDevices",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"68"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"listDevices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /appLogout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d49c8d42-02bd-523f-8298-57b6243b82e4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "d49c8d42-02bd-523f-8298-57b6243b82e4",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "imei",
+							"value": "354119072200090",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.0.68:8000/api/appLogout",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"68"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"appLogout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /getLatestMessages/354119072200090",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d49c8d42-02bd-523f-8298-57b6243b82e4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.0.68:8000/api/getMessagesAPI/354119072200090",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"68"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getMessagesAPI",
+						"354119072200090"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/appLogin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "imei",
+							"value": "354119072200090",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d49c8d42-02bd-523f-8298-57b6243b82e4",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.0.68:8000/api/appLogin",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"68"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"appLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /contactDetail/7",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "abd96e4f-5f5e-5baf-ae50-f40f1ec2a08f",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.0.68:8000/api/contactDetail/7",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"68"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contactDetail",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /deviceDetail/19",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "abd96e4f-5f5e-5baf-ae50-f40f1ec2a08f",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.0.68:8000/api/deviceDetail/19",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"68"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"deviceDetail",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/saveContacts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "abd96e4f-5f5e-5baf-ae50-f40f1ec2a08f",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"imei\": \"354119072200090\",\n\t\"agenda\": [{\n\t\t\"nome\": \"Jods\",\n\t\t\"telefone\": \"5527928292829\"\n\t}, {\n\t\t\"nome\": \"Halane\",\n\t\t\"telefone\": \"5527827282727\"\n\t}]\n}"
+				},
+				"url": {
+					"raw": "http://192.168.0.68:8000/api/saveContacts",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"68"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"saveContacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /getLatestDevices/354119072200090",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d49c8d42-02bd-523f-8298-57b6243b82e4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.0.68:8000/api/getLatestDevices/354119072200090",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"68"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getLatestDevices",
+						"354119072200090"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /getLatestContacts/354119072200090",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d49c8d42-02bd-523f-8298-57b6243b82e4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.0.68:8000/api/getLatestContacts/354119072200090",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"68"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getLatestContacts",
+						"354119072200090"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /getLatestMessages/354119072200090",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d49c8d42-02bd-523f-8298-57b6243b82e4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.0.68:8000/api/getLatestMessages/354119072200090",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"68"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getLatestMessages",
+						"354119072200090"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/getGeneralStatisticsAPI",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 873777f9-7acf-5152-9c51-4f9269844a99"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.0.86:8000/api/getGeneralStatisticsAPI",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"86"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getGeneralStatisticsAPI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/getGeneralStatisticsAPI copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 873777f9-7acf-5152-9c51-4f9269844a99"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://192.168.0.86:8000/api/getClientsMonthlyAPI",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"86"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getClientsMonthlyAPI"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

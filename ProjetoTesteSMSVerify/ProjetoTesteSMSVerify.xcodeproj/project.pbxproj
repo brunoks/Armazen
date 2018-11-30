@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3FFC455219B1116005BC709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FFC454219B1116005BC709 /* AppDelegate.swift */; };
+		F3FFC457219B1116005BC709 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FFC456219B1116005BC709 /* ViewController.swift */; };
+		F3FFC45A219B1116005BC709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FFC458219B1116005BC709 /* Main.storyboard */; };
+		F3FFC45C219B1122005BC709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3FFC45B219B1122005BC709 /* Assets.xcassets */; };
+		F3FFC45F219B1122005BC709 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FFC45D219B1122005BC709 /* LaunchScreen.storyboard */; };
+		F3FFC46A219B1123005BC709 /* ProjetoTesteSMSVerifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FFC469219B1123005BC709 /* ProjetoTesteSMSVerifyTests.swift */; };
+		F3FFC475219B1123005BC709 /* ProjetoTesteSMSVerifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FFC474219B1123005BC709 /* ProjetoTesteSMSVerifyUITests.swift */; };
+		F3FFC483219B1367005BC709 /* apiKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3FFC482219B1367005BC709 /* apiKey.plist */; };
+		F3FFC485219B19A6005BC709 /* StartVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FFC484219B19A6005BC709 /* StartVerificationViewController.swift */; };
+		F3FFC487219B19B3005BC709 /* CheckVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FFC486219B19B3005BC709 /* CheckVerificationViewController.swift */; };
+		F3FFC489219B19BF005BC709 /* VerificationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FFC488219B19BF005BC709 /* VerificationResultViewController.swift */; };
+		F3FFC48B219B19D8005BC709 /* VerifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FFC48A219B19D8005BC709 /* VerifyAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3FFC466219B1123005BC709 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3FFC449219B1115005BC709 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3FFC450219B1116005BC709;
+			remoteInfo = ProjetoTesteSMSVerify;
+		};
+		F3FFC471219B1123005BC709 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3FFC449219B1115005BC709 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3FFC450219B1116005BC709;
+			remoteInfo = ProjetoTesteSMSVerify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F3FFC451219B1116005BC709 /* ProjetoTesteSMSVerify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoTesteSMSVerify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3FFC454219B1116005BC709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3FFC456219B1116005BC709 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3FFC459219B1116005BC709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3FFC45B219B1122005BC709 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3FFC45E219B1122005BC709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3FFC460219B1122005BC709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3FFC465219B1123005BC709 /* ProjetoTesteSMSVerifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjetoTesteSMSVerifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3FFC469219B1123005BC709 /* ProjetoTesteSMSVerifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoTesteSMSVerifyTests.swift; sourceTree = "<group>"; };
+		F3FFC46B219B1123005BC709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3FFC470219B1123005BC709 /* ProjetoTesteSMSVerifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjetoTesteSMSVerifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3FFC474219B1123005BC709 /* ProjetoTesteSMSVerifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoTesteSMSVerifyUITests.swift; sourceTree = "<group>"; };
+		F3FFC476219B1123005BC709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3FFC482219B1367005BC709 /* apiKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = apiKey.plist; sourceTree = "<group>"; };
+		F3FFC484219B19A6005BC709 /* StartVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVerificationViewController.swift; sourceTree = "<group>"; };
+		F3FFC486219B19B3005BC709 /* CheckVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckVerificationViewController.swift; sourceTree = "<group>"; };
+		F3FFC488219B19BF005BC709 /* VerificationResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationResultViewController.swift; sourceTree = "<group>"; };
+		F3FFC48A219B19D8005BC709 /* VerifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAPI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3FFC44E219B1116005BC709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FFC462219B1123005BC709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FFC46D219B1123005BC709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3FFC448219B1115005BC709 = {
+			isa = PBXGroup;
+			children = (
+				F3FFC453219B1116005BC709 /* ProjetoTesteSMSVerify */,
+				F3FFC468219B1123005BC709 /* ProjetoTesteSMSVerifyTests */,
+				F3FFC473219B1123005BC709 /* ProjetoTesteSMSVerifyUITests */,
+				F3FFC452219B1116005BC709 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3FFC452219B1116005BC709 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3FFC451219B1116005BC709 /* ProjetoTesteSMSVerify.app */,
+				F3FFC465219B1123005BC709 /* ProjetoTesteSMSVerifyTests.xctest */,
+				F3FFC470219B1123005BC709 /* ProjetoTesteSMSVerifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3FFC453219B1116005BC709 /* ProjetoTesteSMSVerify */ = {
+			isa = PBXGroup;
+			children = (
+				F3FFC454219B1116005BC709 /* AppDelegate.swift */,
+				F3FFC456219B1116005BC709 /* ViewController.swift */,
+				F3FFC48A219B19D8005BC709 /* VerifyAPI.swift */,
+				F3FFC486219B19B3005BC709 /* CheckVerificationViewController.swift */,
+				F3FFC488219B19BF005BC709 /* VerificationResultViewController.swift */,
+				F3FFC484219B19A6005BC709 /* StartVerificationViewController.swift */,
+				F3FFC458219B1116005BC709 /* Main.storyboard */,
+				F3FFC45B219B1122005BC709 /* Assets.xcassets */,
+				F3FFC45D219B1122005BC709 /* LaunchScreen.storyboard */,
+				F3FFC482219B1367005BC709 /* apiKey.plist */,
+				F3FFC460219B1122005BC709 /* Info.plist */,
+			);
+			path = ProjetoTesteSMSVerify;
+			sourceTree = "<group>";
+		};
+		F3FFC468219B1123005BC709 /* ProjetoTesteSMSVerifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3FFC469219B1123005BC709 /* ProjetoTesteSMSVerifyTests.swift */,
+				F3FFC46B219B1123005BC709 /* Info.plist */,
+			);
+			path = ProjetoTesteSMSVerifyTests;
+			sourceTree = "<group>";
+		};
+		F3FFC473219B1123005BC709 /* ProjetoTesteSMSVerifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3FFC474219B1123005BC709 /* ProjetoTesteSMSVerifyUITests.swift */,
+				F3FFC476219B1123005BC709 /* Info.plist */,
+			);
+			path = ProjetoTesteSMSVerifyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3FFC450219B1116005BC709 /* ProjetoTesteSMSVerify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3FFC479219B1123005BC709 /* Build configuration list for PBXNativeTarget "ProjetoTesteSMSVerify" */;
+			buildPhases = (
+				F3FFC44D219B1116005BC709 /* Sources */,
+				F3FFC44E219B1116005BC709 /* Frameworks */,
+				F3FFC44F219B1116005BC709 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProjetoTesteSMSVerify;
+			productName = ProjetoTesteSMSVerify;
+			productReference = F3FFC451219B1116005BC709 /* ProjetoTesteSMSVerify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3FFC464219B1123005BC709 /* ProjetoTesteSMSVerifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3FFC47C219B1123005BC709 /* Build configuration list for PBXNativeTarget "ProjetoTesteSMSVerifyTests" */;
+			buildPhases = (
+				F3FFC461219B1123005BC709 /* Sources */,
+				F3FFC462219B1123005BC709 /* Frameworks */,
+				F3FFC463219B1123005BC709 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3FFC467219B1123005BC709 /* PBXTargetDependency */,
+			);
+			name = ProjetoTesteSMSVerifyTests;
+			productName = ProjetoTesteSMSVerifyTests;
+			productReference = F3FFC465219B1123005BC709 /* ProjetoTesteSMSVerifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3FFC46F219B1123005BC709 /* ProjetoTesteSMSVerifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3FFC47F219B1123005BC709 /* Build configuration list for PBXNativeTarget "ProjetoTesteSMSVerifyUITests" */;
+			buildPhases = (
+				F3FFC46C219B1123005BC709 /* Sources */,
+				F3FFC46D219B1123005BC709 /* Frameworks */,
+				F3FFC46E219B1123005BC709 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3FFC472219B1123005BC709 /* PBXTargetDependency */,
+			);
+			name = ProjetoTesteSMSVerifyUITests;
+			productName = ProjetoTesteSMSVerifyUITests;
+			productReference = F3FFC470219B1123005BC709 /* ProjetoTesteSMSVerifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3FFC449219B1115005BC709 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Luciano Pezzin";
+				TargetAttributes = {
+					F3FFC450219B1116005BC709 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F3FFC464219B1123005BC709 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F3FFC450219B1116005BC709;
+					};
+					F3FFC46F219B1123005BC709 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F3FFC450219B1116005BC709;
+					};
+				};
+			};
+			buildConfigurationList = F3FFC44C219B1115005BC709 /* Build configuration list for PBXProject "ProjetoTesteSMSVerify" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3FFC448219B1115005BC709;
+			productRefGroup = F3FFC452219B1116005BC709 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3FFC450219B1116005BC709 /* ProjetoTesteSMSVerify */,
+				F3FFC464219B1123005BC709 /* ProjetoTesteSMSVerifyTests */,
+				F3FFC46F219B1123005BC709 /* ProjetoTesteSMSVerifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3FFC44F219B1116005BC709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FFC45F219B1122005BC709 /* LaunchScreen.storyboard in Resources */,
+				F3FFC483219B1367005BC709 /* apiKey.plist in Resources */,
+				F3FFC45C219B1122005BC709 /* Assets.xcassets in Resources */,
+				F3FFC45A219B1116005BC709 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FFC463219B1123005BC709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FFC46E219B1123005BC709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3FFC44D219B1116005BC709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FFC489219B19BF005BC709 /* VerificationResultViewController.swift in Sources */,
+				F3FFC487219B19B3005BC709 /* CheckVerificationViewController.swift in Sources */,
+				F3FFC457219B1116005BC709 /* ViewController.swift in Sources */,
+				F3FFC48B219B19D8005BC709 /* VerifyAPI.swift in Sources */,
+				F3FFC455219B1116005BC709 /* AppDelegate.swift in Sources */,
+				F3FFC485219B19A6005BC709 /* StartVerificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FFC461219B1123005BC709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FFC46A219B1123005BC709 /* ProjetoTesteSMSVerifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FFC46C219B1123005BC709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FFC475219B1123005BC709 /* ProjetoTesteSMSVerifyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3FFC467219B1123005BC709 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3FFC450219B1116005BC709 /* ProjetoTesteSMSVerify */;
+			targetProxy = F3FFC466219B1123005BC709 /* PBXContainerItemProxy */;
+		};
+		F3FFC472219B1123005BC709 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3FFC450219B1116005BC709 /* ProjetoTesteSMSVerify */;
+			targetProxy = F3FFC471219B1123005BC709 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3FFC458219B1116005BC709 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3FFC459219B1116005BC709 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3FFC45D219B1122005BC709 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3FFC45E219B1122005BC709 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3FFC477219B1123005BC709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3FFC478219B1123005BC709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3FFC47A219B1123005BC709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY3S89YV5B;
+				INFOPLIST_FILE = ProjetoTesteSMSVerify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sac.digital.ProjetoTesteSMSVerifyy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3FFC47B219B1123005BC709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY3S89YV5B;
+				INFOPLIST_FILE = ProjetoTesteSMSVerify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sac.digital.ProjetoTesteSMSVerifyy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F3FFC47D219B1123005BC709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProjetoTesteSMSVerifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sac.digital.ProjetoTesteSMSVerifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjetoTesteSMSVerify.app/ProjetoTesteSMSVerify";
+			};
+			name = Debug;
+		};
+		F3FFC47E219B1123005BC709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProjetoTesteSMSVerifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sac.digital.ProjetoTesteSMSVerifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjetoTesteSMSVerify.app/ProjetoTesteSMSVerify";
+			};
+			name = Release;
+		};
+		F3FFC480219B1123005BC709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProjetoTesteSMSVerifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sac.digital.ProjetoTesteSMSVerifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProjetoTesteSMSVerify;
+			};
+			name = Debug;
+		};
+		F3FFC481219B1123005BC709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProjetoTesteSMSVerifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sac.digital.ProjetoTesteSMSVerifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProjetoTesteSMSVerify;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3FFC44C219B1115005BC709 /* Build configuration list for PBXProject "ProjetoTesteSMSVerify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3FFC477219B1123005BC709 /* Debug */,
+				F3FFC478219B1123005BC709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3FFC479219B1123005BC709 /* Build configuration list for PBXNativeTarget "ProjetoTesteSMSVerify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3FFC47A219B1123005BC709 /* Debug */,
+				F3FFC47B219B1123005BC709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3FFC47C219B1123005BC709 /* Build configuration list for PBXNativeTarget "ProjetoTesteSMSVerifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3FFC47D219B1123005BC709 /* Debug */,
+				F3FFC47E219B1123005BC709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3FFC47F219B1123005BC709 /* Build configuration list for PBXNativeTarget "ProjetoTesteSMSVerifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3FFC480219B1123005BC709 /* Debug */,
+				F3FFC481219B1123005BC709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3FFC449219B1115005BC709 /* Project object */;
+}
