@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tTK-CO-0fT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="VaS-xL-JtH">
+            <objects>
+                <collectionViewController id="QVT-Fa-GRd" customClass="ViewController" customModule="NavBarAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Vmf-R6-8XH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zet-Fm-H6T">
+                            <size key="itemSize" width="375" height="133"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCell" id="V0B-vb-MPU" customClass="CustomCell" customModule="NavBarAnimation" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="133"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amazing-1" translatesAutoresizingMaskIntoConstraints="NO" id="XH1-Ks-vYJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="133"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="XH1-Ks-vYJ" secondAttribute="trailing" id="GfQ-Ma-Cmm"/>
+                                    <constraint firstAttribute="bottom" secondItem="XH1-Ks-vYJ" secondAttribute="bottom" id="K0A-NV-XZB"/>
+                                    <constraint firstItem="XH1-Ks-vYJ" firstAttribute="leading" secondItem="V0B-vb-MPU" secondAttribute="leading" id="O4e-9e-8SA"/>
+                                    <constraint firstItem="XH1-Ks-vYJ" firstAttribute="top" secondItem="V0B-vb-MPU" secondAttribute="top" id="boO-CB-8mV"/>
+                                </constraints>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="QVT-Fa-GRd" id="Hzv-bj-ykZ"/>
+                            <outlet property="delegate" destination="QVT-Fa-GRd" id="JMS-sp-z5L"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="TDg-bn-umY"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0wg-Q5-gQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.79999999999995" y="118.29085457271366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uWe-L3-KmG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tTK-CO-0fT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H8W-UY-afO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QVT-Fa-GRd" kind="relationship" relationship="rootViewController" id="6xb-im-Iod"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sIu-GH-WIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="118"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="amazing-1" width="1920" height="1080"/>
+    </resources>
+</document>

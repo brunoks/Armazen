@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F35F6E1A21B83EDE00792C21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F6E1921B83EDE00792C21 /* AppDelegate.swift */; };
+		F35F6E1C21B83EDE00792C21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F6E1B21B83EDE00792C21 /* ViewController.swift */; };
+		F35F6E1F21B83EDE00792C21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35F6E1D21B83EDE00792C21 /* Main.storyboard */; };
+		F35F6E2121B83EE200792C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35F6E2021B83EE200792C21 /* Assets.xcassets */; };
+		F35F6E2421B83EE200792C21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35F6E2221B83EE200792C21 /* LaunchScreen.storyboard */; };
+		F35F6E2F21B83EE200792C21 /* NavBarAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F6E2E21B83EE200792C21 /* NavBarAnimationTests.swift */; };
+		F35F6E3A21B83EE200792C21 /* NavBarAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F6E3921B83EE200792C21 /* NavBarAnimationUITests.swift */; };
+		F35F6E4821B8402500792C21 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F6E4721B8402500792C21 /* CustomCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F35F6E2B21B83EE200792C21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F35F6E0E21B83EDE00792C21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F35F6E1521B83EDE00792C21;
+			remoteInfo = NavBarAnimation;
+		};
+		F35F6E3621B83EE200792C21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F35F6E0E21B83EDE00792C21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F35F6E1521B83EDE00792C21;
+			remoteInfo = NavBarAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F35F6E1621B83EDE00792C21 /* NavBarAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavBarAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35F6E1921B83EDE00792C21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F35F6E1B21B83EDE00792C21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F35F6E1E21B83EDE00792C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F35F6E2021B83EE200792C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F35F6E2321B83EE200792C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F35F6E2521B83EE200792C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F35F6E2A21B83EE200792C21 /* NavBarAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavBarAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35F6E2E21B83EE200792C21 /* NavBarAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarAnimationTests.swift; sourceTree = "<group>"; };
+		F35F6E3021B83EE200792C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F35F6E3521B83EE200792C21 /* NavBarAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavBarAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35F6E3921B83EE200792C21 /* NavBarAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarAnimationUITests.swift; sourceTree = "<group>"; };
+		F35F6E3B21B83EE200792C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F35F6E4721B8402500792C21 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F35F6E1321B83EDE00792C21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35F6E2721B83EE200792C21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35F6E3221B83EE200792C21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F35F6E0D21B83EDE00792C21 = {
+			isa = PBXGroup;
+			children = (
+				F35F6E1821B83EDE00792C21 /* NavBarAnimation */,
+				F35F6E2D21B83EE200792C21 /* NavBarAnimationTests */,
+				F35F6E3821B83EE200792C21 /* NavBarAnimationUITests */,
+				F35F6E1721B83EDE00792C21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F35F6E1721B83EDE00792C21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F35F6E1621B83EDE00792C21 /* NavBarAnimation.app */,
+				F35F6E2A21B83EE200792C21 /* NavBarAnimationTests.xctest */,
+				F35F6E3521B83EE200792C21 /* NavBarAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F35F6E1821B83EDE00792C21 /* NavBarAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				F35F6E1921B83EDE00792C21 /* AppDelegate.swift */,
+				F35F6E1B21B83EDE00792C21 /* ViewController.swift */,
+				F35F6E1D21B83EDE00792C21 /* Main.storyboard */,
+				F35F6E2021B83EE200792C21 /* Assets.xcassets */,
+				F35F6E4721B8402500792C21 /* CustomCell.swift */,
+				F35F6E2221B83EE200792C21 /* LaunchScreen.storyboard */,
+				F35F6E2521B83EE200792C21 /* Info.plist */,
+			);
+			path = NavBarAnimation;
+			sourceTree = "<group>";
+		};
+		F35F6E2D21B83EE200792C21 /* NavBarAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				F35F6E2E21B83EE200792C21 /* NavBarAnimationTests.swift */,
+				F35F6E3021B83EE200792C21 /* Info.plist */,
+			);
+			path = NavBarAnimationTests;
+			sourceTree = "<group>";
+		};
+		F35F6E3821B83EE200792C21 /* NavBarAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F35F6E3921B83EE200792C21 /* NavBarAnimationUITests.swift */,
+				F35F6E3B21B83EE200792C21 /* Info.plist */,
+			);
+			path = NavBarAnimationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F35F6E1521B83EDE00792C21 /* NavBarAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F35F6E3E21B83EE200792C21 /* Build configuration list for PBXNativeTarget "NavBarAnimation" */;
+			buildPhases = (
+				F35F6E1221B83EDE00792C21 /* Sources */,
+				F35F6E1321B83EDE00792C21 /* Frameworks */,
+				F35F6E1421B83EDE00792C21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NavBarAnimation;
+			productName = NavBarAnimation;
+			productReference = F35F6E1621B83EDE00792C21 /* NavBarAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F35F6E2921B83EE200792C21 /* NavBarAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F35F6E4121B83EE200792C21 /* Build configuration list for PBXNativeTarget "NavBarAnimationTests" */;
+			buildPhases = (
+				F35F6E2621B83EE200792C21 /* Sources */,
+				F35F6E2721B83EE200792C21 /* Frameworks */,
+				F35F6E2821B83EE200792C21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F35F6E2C21B83EE200792C21 /* PBXTargetDependency */,
+			);
+			name = NavBarAnimationTests;
+			productName = NavBarAnimationTests;
+			productReference = F35F6E2A21B83EE200792C21 /* NavBarAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F35F6E3421B83EE200792C21 /* NavBarAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F35F6E4421B83EE200792C21 /* Build configuration list for PBXNativeTarget "NavBarAnimationUITests" */;
+			buildPhases = (
+				F35F6E3121B83EE200792C21 /* Sources */,
+				F35F6E3221B83EE200792C21 /* Frameworks */,
+				F35F6E3321B83EE200792C21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F35F6E3721B83EE200792C21 /* PBXTargetDependency */,
+			);
+			name = NavBarAnimationUITests;
+			productName = NavBarAnimationUITests;
+			productReference = F35F6E3521B83EE200792C21 /* NavBarAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F35F6E0E21B83EDE00792C21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Luciano Pezzin";
+				TargetAttributes = {
+					F35F6E1521B83EDE00792C21 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F35F6E2921B83EE200792C21 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F35F6E1521B83EDE00792C21;
+					};
+					F35F6E3421B83EE200792C21 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F35F6E1521B83EDE00792C21;
+					};
+				};
+			};
+			buildConfigurationList = F35F6E1121B83EDE00792C21 /* Build configuration list for PBXProject "NavBarAnimation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F35F6E0D21B83EDE00792C21;
+			productRefGroup = F35F6E1721B83EDE00792C21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F35F6E1521B83EDE00792C21 /* NavBarAnimation */,
+				F35F6E2921B83EE200792C21 /* NavBarAnimationTests */,
+				F35F6E3421B83EE200792C21 /* NavBarAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F35F6E1421B83EDE00792C21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F35F6E2421B83EE200792C21 /* LaunchScreen.storyboard in Resources */,
+				F35F6E2121B83EE200792C21 /* Assets.xcassets in Resources */,
+				F35F6E1F21B83EDE00792C21 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35F6E2821B83EE200792C21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35F6E3321B83EE200792C21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F35F6E1221B83EDE00792C21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F35F6E1C21B83EDE00792C21 /* ViewController.swift in Sources */,
+				F35F6E4821B8402500792C21 /* CustomCell.swift in Sources */,
+				F35F6E1A21B83EDE00792C21 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35F6E2621B83EE200792C21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F35F6E2F21B83EE200792C21 /* NavBarAnimationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35F6E3121B83EE200792C21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F35F6E3A21B83EE200792C21 /* NavBarAnimationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F35F6E2C21B83EE200792C21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F35F6E1521B83EDE00792C21 /* NavBarAnimation */;
+			targetProxy = F35F6E2B21B83EE200792C21 /* PBXContainerItemProxy */;
+		};
+		F35F6E3721B83EE200792C21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F35F6E1521B83EDE00792C21 /* NavBarAnimation */;
+			targetProxy = F35F6E3621B83EE200792C21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F35F6E1D21B83EDE00792C21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F35F6E1E21B83EDE00792C21 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F35F6E2221B83EE200792C21 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F35F6E2321B83EE200792C21 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F35F6E3C21B83EE200792C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F35F6E3D21B83EE200792C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F35F6E3F21B83EE200792C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY3S89YV5B;
+				INFOPLIST_FILE = NavBarAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sac.digital.NavBarAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F35F6E4021B83EE200792C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY3S89YV5B;
+				INFOPLIST_FILE = NavBarAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sac.digital.NavBarAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F35F6E4221B83EE200792C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NavBarAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sac.digital.NavBarAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavBarAnimation.app/NavBarAnimation";
+			};
+			name = Debug;
+		};
+		F35F6E4321B83EE200792C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NavBarAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sac.digital.NavBarAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavBarAnimation.app/NavBarAnimation";
+			};
+			name = Release;
+		};
+		F35F6E4521B83EE200792C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NavBarAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sac.digital.NavBarAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NavBarAnimation;
+			};
+			name = Debug;
+		};
+		F35F6E4621B83EE200792C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NavBarAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sac.digital.NavBarAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NavBarAnimation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F35F6E1121B83EDE00792C21 /* Build configuration list for PBXProject "NavBarAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F35F6E3C21B83EE200792C21 /* Debug */,
+				F35F6E3D21B83EE200792C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F35F6E3E21B83EE200792C21 /* Build configuration list for PBXNativeTarget "NavBarAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F35F6E3F21B83EE200792C21 /* Debug */,
+				F35F6E4021B83EE200792C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F35F6E4121B83EE200792C21 /* Build configuration list for PBXNativeTarget "NavBarAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F35F6E4221B83EE200792C21 /* Debug */,
+				F35F6E4321B83EE200792C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F35F6E4421B83EE200792C21 /* Build configuration list for PBXNativeTarget "NavBarAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F35F6E4521B83EE200792C21 /* Debug */,
+				F35F6E4621B83EE200792C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F35F6E0E21B83EDE00792C21 /* Project object */;
+}
